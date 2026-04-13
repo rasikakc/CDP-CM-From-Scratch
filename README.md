@@ -30,13 +30,14 @@ Primary source of trusth for understading CDP and CM compatibilty kinldy refer h
 You can choose any version of CM and CDP for understanding the tech stack I am going for LTS version (trial licenses)
 
 CM download:
-
+<pre>
 https://username:password@archive.cloudera.com/p/cm7/patch/7.11.3.14/redhat8/yum
 https://username:passwor@archive.cloudera.com/p/cm7/patch/7.11.3.14/redhat8/yum/cloudera-manager.repo
-
+</pre>
 
 CDP runtome download : 
-https://username:passwor@archive.cloudera.com/p/cdh7/7.1.9.1000/parcels
+<pre> https://username:passwor@archive.cloudera.com/p/cdh7/7.1.9.1000/parcels </pre>
+
 
 You can try the Cloudera Private Cloud Base Edition of Cloudera Data Platform for 60 days without obtaining a license key file.
 
@@ -44,9 +45,7 @@ You can try the Cloudera Private Cloud Base Edition of Cloudera Data Platform fo
 
 sudo rpm --import https://username:password@archive.cloudera.com/p/cm7/7.11.3.14/redhat9/yum/RPM-GPG-KEY-cloudera
 
-
--------------------Snippet------------------------------
-/etc/yum.repos.d/cloudera-manager.repo
+<pre> /etc/yum.repos.d/cloudera-manager.repo
 [cloudera-manager]
 name=Cloudera Manager 7.11.3
 baseurl=https://username:password@archive.cloudera.com/p/cm7/patch/7.11.3.14/redhat8/yum
@@ -61,9 +60,8 @@ baseurl=https://archive.cloudera.com/postgresql10/redhat9/
 gpgkey=https://archive.cloudera.com/postgresql10/redhat9/RPM-GPG-KEY-PGDG-10
 enabled=1
 gpgcheck=1
-module_hotfixes=true
+module_hotfixes=true </pre>
 
--------------------Snippet------------------------------
     
 
 Cloudera manager related configurations:
